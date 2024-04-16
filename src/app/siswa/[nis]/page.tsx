@@ -71,11 +71,12 @@ export default function Siswa() {
       <div className="max-w-lg hidden mx-auto bg-white border rounded-md p-8 my-8">
         <div id="siswa-info" className="flex flex-col p-16 -mt-6">
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <div style={{ width: '100px', height: '120px', overflow: 'hidden' }}>
+            <div>
               <Image
                 src="/LogoJateng.png"
                 alt="Hasil gambar untuk logo jawa tengah"
-                className="mt-5 object-contain"
+                className="mt-5"
+                layout="fill"
               />
             </div>
             <div className="-ml-80 border-spacing-x-3 pb-5 border-b-4 border-black">
