@@ -74,8 +74,8 @@ export default function Siswa() {
             <div>
               <Image
                 src="/LogoJateng.png"
-                width="100"
-                height="120"
+                width={100}
+                height={120}
                 alt="Hasil gambar untuk logo jawa tengah"
                 className="mt-5"
               />
