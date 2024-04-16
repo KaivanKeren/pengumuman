@@ -74,8 +74,6 @@ export default function Siswa() {
             <div style={{ width: '100px', height: '120px', overflow: 'hidden' }}>
               <Image
                 src="/LogoJateng.png"
-                width="100"
-                height="120"
                 alt="Hasil gambar untuk logo jawa tengah"
                 className="mt-5 object-contain"
               />
