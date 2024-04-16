@@ -78,7 +78,7 @@ export default function Siswa() {
                 height="120"
                 alt="Hasil gambar untuk logo jawa tengah"
                 className="mt-5"
-                 style={{ objectFit: 'cover' }}
+                style={{ width: '100%', height: 'auto' }}
               />
             </div>
             <div className="-ml-80 border-spacing-x-3 pb-5 border-b-4 border-black">
