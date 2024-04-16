@@ -76,7 +76,6 @@ export default function Siswa() {
                 src="/LogoJateng.png"
                 alt="Hasil gambar untuk logo jawa tengah"
                 className="mt-5"
-                layout="fill"
               />
             </div>
             <div className="-ml-80 border-spacing-x-3 pb-5 border-b-4 border-black">
