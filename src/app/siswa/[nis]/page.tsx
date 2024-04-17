@@ -71,15 +71,17 @@ export default function Siswa() {
       <div className="max-w-lg hidden mx-auto bg-white border rounded-md p-8 my-8">
         <div id="siswa-info" className="flex flex-col p-16 -mt-6">
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <div>
-              <Image
-                src="/LogoJateng.png"
-                width={100}
-                height={120}
-                alt="Hasil gambar untuk logo jawa tengah"
-                className="mt-5 object-cover overflow-hidden"
-              />
-            </div>
+            <div style={{ width: '100%', height: 'auto' }}>
+  <Image
+    src="/LogoJateng.png"
+    width={100}
+    height={120}
+    alt="Hasil gambar untuk logo jawa tengah"
+    className="mt-5 object-cover overflow-hidden"
+    style={{ objectFit: 'contain' }}
+  />
+</div>
+
             <div className="-ml-80 border-spacing-x-3 pb-5 border-b-4 border-black">
               <p className="text-center text-lg font-bold">
                 PEMERINTAH PROVINSI JAWA TENGAH
