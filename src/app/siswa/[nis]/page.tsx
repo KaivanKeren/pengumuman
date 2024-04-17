@@ -73,7 +73,7 @@ export default function Siswa() {
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
   <Image
-    src="/LogoJateng.png"
+    src="/Logo Provinsi Jawa Tengah.png"
     width={100}
     height={120}
     alt="Hasil gambar untuk logo jawa tengah"
