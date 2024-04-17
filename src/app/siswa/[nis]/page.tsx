@@ -77,7 +77,7 @@ export default function Siswa() {
   width={100}
   height={120}
   alt="Logo Provinsi Jawa Tengah"
-  className="mt-5"
+  className="mt-5 mr-3 md:mr-0"
 />
 </div>
 
