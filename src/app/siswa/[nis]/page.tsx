@@ -72,14 +72,14 @@ export default function Siswa() {
         <div id="siswa-info" className="flex flex-col p-16 -mt-6">
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
-  <Image
-    src="/Logo Provinsi Jawa Tengah.png"
-    width={100}
-    height={120}
-    alt="Hasil gambar untuk logo jawa tengah"
-    className="mt-5"
-  />
-</div>
+ <Image
+  src="/Logo Provinsi Jawa Tengah.png"
+  width={100}
+  height={120}
+  alt="Logo Provinsi Jawa Tengah"
+  className="mt-5 object-contain"
+/>
+
 
             <div className="-ml-80 border-spacing-x-3 pb-5 border-b-4 border-black">
               <p className="text-center text-lg font-bold">
