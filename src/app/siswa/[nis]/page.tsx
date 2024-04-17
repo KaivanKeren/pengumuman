@@ -71,7 +71,7 @@ export default function Siswa() {
       <div className="max-w-lg hidden mx-auto bg-white border rounded-md p-8 my-8">
         <div id="siswa-info" className="flex flex-col p-16 -mt-6">
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <div style={{ width: '100%', height: 'auto' }}>
+            <div>
   <Image
     src="/LogoJateng.png"
     width={100}
