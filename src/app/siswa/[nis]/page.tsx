@@ -79,7 +79,7 @@ export default function Siswa() {
   alt="Logo Provinsi Jawa Tengah"
   className="mt-5 object-contain"
 />
-
+</div>
 
             <div className="-ml-80 border-spacing-x-3 pb-5 border-b-4 border-black">
               <p className="text-center text-lg font-bold">
