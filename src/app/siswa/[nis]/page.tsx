@@ -52,11 +52,12 @@ export default function Siswa() {
    const shortenName = (name: string) => {
     const words = name.split(" ");
     if (words.length === 5) {
-      words[4] = words[4].charAt(0); // Mengambil huruf pertama dari kata kelima
-      return words.slice(0, 4).join(" ");
+      words[4] = words[4].charAt(0) + "."; // Mengambil huruf pertama dari kata kelima dan menambahkan titik
+      return words.slice(0, 5).join(" ");
     }
     return name;
   };
+
 
   if (loading)
     return (
