@@ -17,8 +17,9 @@ interface Siswa {
 }
 
 function singkatkan_nama(nama) {
-    const nama_split = nama.split();
+    const nama_split = nama.split(" "); // Pisahkan nama menggunakan spasi
     if (nama_split.length > 2) {
+        // Buat singkatan nama dengan mengambil huruf pertama dari setiap kata
         const singkatan = nama_split.map((kata, index) => (index !== nama_split.length - 1) ? kata[0] : kata).join(' ');
         return singkatan;
     } else {
