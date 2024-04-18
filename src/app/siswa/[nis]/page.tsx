@@ -49,6 +49,15 @@ export default function Siswa() {
     html2pdf().from(element).set(opt).save();
   };
 
+   const shortenName = (name: string) => {
+    const words = name.split(" ");
+    if (words.length === 5) {
+      words[4] = words[4].charAt(0); // Mengambil huruf pertama dari kata kelima
+      return words.slice(0, 4).join(" ");
+    }
+    return name;
+  };
+
   if (loading)
     return (
       <div className="flex items-center justify-center h-screen">
@@ -140,7 +149,7 @@ export default function Siswa() {
               <p>Nomor Induk Siswa Nasional</p>
             </div>
             <div>
-              <p>: {siswa.nama}</p>
+              <p>: {shortenName(siswa.nama)}</p>
               <p>: {siswa.tempat_tanggal_lahir}</p>
               <p>: {siswa.nama_orangtua}</p>
               <p>: {siswa.nis}</p>
@@ -178,7 +187,7 @@ export default function Siswa() {
         <div>
           <p className="mb-2 md:mb-0 md:flex md:gap-1">
             <span className="block md:hidden font-bold">Nama :</span>
-            <span className="hidden md:block">:</span>{siswa.nama}
+            <span className="hidden md:block">:</span>{shortenName(siswa.nama)}
           </p>
           <p className="mb-2 md:mb-0 md:flex md:gap-1">
             <span className="block md:hidden font-bold">
