@@ -16,17 +16,6 @@ interface Siswa {
   status: string;
 }
 
-function singkatkan_nama(nama) {
-    const nama_split = nama.split(" "); // Pisahkan nama menggunakan spasi
-    if (nama_split.length > 2) {
-        // Buat singkatan nama dengan mengambil huruf pertama dari setiap kata
-        const singkatan = nama_split.map((kata, index) => (index !== nama_split.length - 1) ? kata[0] : kata).join(' ');
-        return singkatan;
-    } else {
-        return nama;
-    }
-}
-
 export default function Siswa() {
   const [siswa, setSiswa] = useState<Siswa | null>(null);
   const [loading, setLoading] = useState(true);
@@ -151,7 +140,7 @@ export default function Siswa() {
               <p>Nomor Induk Siswa Nasional</p>
             </div>
             <div>
-              <p>: {namaSiswa}</p>
+              <p>: {siswa.nama}</p>
               <p>: {siswa.tempat_tanggal_lahir}</p>
               <p>: {siswa.nama_orangtua}</p>
               <p>: {siswa.nis}</p>
@@ -189,7 +178,7 @@ export default function Siswa() {
         <div>
           <p className="mb-2 md:mb-0 md:flex md:gap-1">
             <span className="block md:hidden font-bold">Nama :</span>
-            <span className="hidden md:block">:</span>{namaSiswa}
+            <span className="hidden md:block">:</span>{siswa.nama}
           </p>
           <p className="mb-2 md:mb-0 md:flex md:gap-1">
             <span className="block md:hidden font-bold">
