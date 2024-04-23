@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 export default function Home() {
-  const [nis, setnis] = useState("");
+  const [nisn, setnisn] = useState("");
   const [siswa, setSiswa] = useState(null);
   const [error, setError] = useState<string | null>(null);
   const [countdown, setCountdown] = useState<string | null>(null);
@@ -70,13 +70,13 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const response = await fetch(`${apiUrl}/siswa/${nis}`);
+      const response = await fetch(`${apiUrl}/siswa/${nisn}`);
       if (response.ok) {
         const data = await response.json();
         setSiswa(data);
         setError(null);
         setLoading(false);
-        router.push(`/siswa/${nis}`);
+        router.push(`/siswa/${nisn}`);
       } else {
         setError("Siswa tidak ditemukan");
         setLoading(false);
@@ -112,13 +112,12 @@ export default function Home() {
         </p>
         <form onSubmit={handleSubmit} className="mb-2 md:mb-4">
           <p className="text-sm md:text-base text-gray-800 text-center">
-            Masukkan 4 Angka  <b className="text-black">NIS</b>
-            , Contoh:  6360
+            Masukkan 10 Angka  <b className="text-black">NISN</b>
           </p>
           <input
             type="number"
-            value={nis}
-            onChange={(e) => setnis(e.target.value)}
+            value={nisn}
+            onChange={(e) => setnisn(e.target.value)}
             className="w-full mt-5 p-1 md:p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
           />
           <button
@@ -152,7 +151,7 @@ export default function Home() {
             <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
           </svg>
           <p className="text-xs md:text-sm">
-            Jika Anda lupa NIS, silakan hubungi admin
+            Jika Anda lupa NISN, silakan hubungi admin
             sekolah.
           </p>
         </div>
