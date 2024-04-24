@@ -167,7 +167,7 @@ export default function Siswa() {
           </p>
 <div className="flex justify-end mb-4">
             <div className="text-right">
-              <p className="text-sm">Kudus, 6 Mei 2024</p>
+              <p className="text-sm mr-36">Kudus, 6 Mei 2024</p>
               <p className="text-sm mr-[138px] mb-16">Kepala Sekolah,</p>
               <p className="mt-4 text-lg font-bold">BUDI SUSANTO, S.Pd, M.Pd</p>
               <p className="text-sm">NIP. 19670815 199512 1 003</p>
@@ -238,11 +238,11 @@ export default function Siswa() {
           </p>
         </div>
       )}
-      {siswa.status === "Tidak Lulus" && (
+      {siswa.status === "Lulus Bersyarat" && (
         <div className="mx-auto p-3 w-full md:text-base sm:text-sm text-xs bg-red-50 border rounded-md">
           <h1 className="font-bold">Maaf</h1>
           <p className="text-gray-800 md:text-sm">
-            Anda dinyatakan <b>Tidak Lulus</b> dari satuan pendidikan SMKN 2
+            Anda dinyatakan <b>Lulus Bersyarat</b> dari satuan pendidikan SMKN 2
             Kudus
           </p>
         </div>
