@@ -167,7 +167,7 @@ export default function Siswa() {
           </p>
 <div className="flex justify-end mb-4">
             <div className="text-right">
-              <p className="text-sm mr-[138px]">Kudus, 6 Mei 2024</p>
+              <p className="text-sm mr-32">Kudus, 6 Mei 2024</p>
               <p className="text-sm mr-[138px] mb-16">Kepala Sekolah,</p>
               <p className="mt-4 text-lg font-bold">BUDI SUSANTO, S.Pd, M.Pd</p>
               <p className="text-sm">NIP. 19670815 199512 1 003</p>
