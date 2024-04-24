@@ -23,11 +23,11 @@ export default function Siswa() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const nis = window.location.pathname.split("/").pop();
+      const nisn = window.location.pathname.split("/").pop();
       const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
       try {
-        const response = await axios.get(`${apiUrl}/siswa/${nis}`);
+        const response = await axios.get(`${apiUrl}/siswa/${nisn}`);
         setSiswa(response.data);
         setLoading(false);
       } catch (error) {
