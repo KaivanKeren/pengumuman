@@ -26,7 +26,7 @@ const Navbar = () => {
                 height={30}
                 alt="Logo SMK"
               />
-              <a href="/" className="hidden md:block m-2">
+              <a href="/" className="text-sm md:text-base m-2">
                 SMK Negeri 2 Kudus
               </a>
             </div>
