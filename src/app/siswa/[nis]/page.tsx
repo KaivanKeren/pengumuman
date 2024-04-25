@@ -52,7 +52,6 @@ export default function Siswa() {
 const shortenName = (name : string) => {
     const words = name.split(" ");
     if (words.length === 5) {
-        // Mengambil huruf pertama dari kata keempat dan kelima dari dua kalimat terakhir dan menambahkan titik
         words[3] = words[3].charAt(0) + ".";
         words[4] = words[4].charAt(0) + ".";
         return words.join(" ");
@@ -172,7 +171,7 @@ const shortenName = (name : string) => {
               <p className="text-sm mr-[121px]">Kudus, 6 Mei 2024</p>
               <p className="text-sm mr-[138px] mb-16">Kepala Sekolah,</p>
               <p className="mt-4 text-lg font-bold">BUDI SUSANTO, S.Pd, M.Pd</p>
-              <p className="text-sm mr-[65px]">NIP. 19670815 199512 1 003</p>
+              <p className="text-sm mr-[63px] md:mr-[65px]">NIP. 19670815 199512 1 003</p>
             </div>
           </div>
 
