@@ -53,8 +53,8 @@ const shortenName = (name : string) => {
     const words = name.split(" ");
     if (words.length === 5) {
         // Mengambil huruf pertama dari kata keempat dan kelima dari dua kalimat terakhir dan menambahkan titik
+        words[3] = words[3].charAt(0) + ".";
         words[4] = words[4].charAt(0) + ".";
-        words[5] = words[5].charAt(0) + ".";
         return words.join(" ");
     }
     return name;
