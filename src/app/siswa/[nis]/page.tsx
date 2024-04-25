@@ -49,7 +49,7 @@ export default function Siswa() {
     html2pdf().from(element).set(opt).save();
   };
 
-const shortenName = (name) => {
+const shortenName = (name: string) => {
     const words = name.split(" ");
     if (words.length === 5) {
         const lastWord = words[4];
