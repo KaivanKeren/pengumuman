@@ -49,13 +49,13 @@ export default function Siswa() {
     html2pdf().from(element).set(opt).save();
   };
 
-const shortenName = (name: string) => {
+const shortenName = (name) => {
     const words = name.split(" ");
     if (words.length === 5) {
-        const lastWord = words[4];
-        const initials = lastWord.charAt(0) + ".";
-        const secondInitial = words[2].charAt(0) + ".";
-        return `${words[0]} ${words[1]} ${words[2]} ${initials} ${secondInitial}`;
+        // Mengambil huruf pertama dari kata keempat dan kelima dari dua kalimat terakhir dan menambahkan titik
+        words[3] = words[3].charAt(0) + ".";
+        words[4] = words[4].charAt(0) + ".";
+        return words.join(" ");
     }
     return name;
 };
