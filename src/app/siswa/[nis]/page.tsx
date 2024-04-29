@@ -127,7 +127,7 @@ const shortenName = (name : string) => {
           <h3 className="text-lg font-bold text-center mb-6">
             TAHUN PELAJARAN 2023/2024
           </h3>
-          <p className="text-center underline mb-4">Nomor : </p>
+          <p className="text-center mb-4">Nomor : </p>
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
               <p className="font-bold">Program Keahlian</p>
