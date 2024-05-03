@@ -173,9 +173,11 @@ const shortenName = (name : string) => {
               <p className="mt-4 text-lg font-bold">BUDI SUSANTO, S.Pd, M.Pd</p>
               <p className="text-sm mr-[63px] md:mr-[65px]">NIP. 19670815 199512 1 003</p>
             </div>
+  <div className="mx-auto p-3 w-full text-sm text-gray-500 text-center">
+  <p>Catatan : Surat ini mohon dicetak/print dan digunakan sebagai bukti untuk pengambilan SKL</p>
+</div>
+  
           </div>
-
-
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 text-xs sm:text-sm md:text-base mb-4 md:p-10 bg-gray-100 border rounded-md shadow-md">
