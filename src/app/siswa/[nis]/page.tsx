@@ -175,7 +175,7 @@ const shortenName = (name : string) => {
             </div>
           </div>
             <div className="mx-auto pt-3 mt-4 w-full border-t-4 text-sm text-gray-500 text-center">
-  <p>Catatan : Surat ini mohon dicetak/print dan digunakan sebagai bukti untuk pengambilan SKL</p>
+  <p><span className="font-bold">Catatan</span> : Surat ini mohon dicetak/print dan digunakan sebagai bukti untuk pengambilan SKL</p>
 </div>
         </div>
       </div>
