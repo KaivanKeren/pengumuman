@@ -167,14 +167,14 @@ const shortenName = (name : string) => {
             Menengah Kejuruan Negeri 2 Kudus Tahun Pelajaran 2023/2024.
           </p>
 <div className="flex justify-end mb-4">
-            <div className="text-right">
-              <p className="text-sm -mb-5 mr-[121px]">Kudus, 6 Mei 2024</p>
-              <p className="text-sm -mb-5 mr-[138px] mb-2">Kepala Sekolah,</p>
-              <img className="w-52 -z-50" src="/TTD-removebg-preview.png" />
-              <p className="mr-3 md:mr-2 -mt-5 text-lg underline">BUDI SUSANTO, S.Pd, M.Pd</p>
-              <p className="text-sm -mt-5 mr-[63px] md:mr-[65px]">NIP. 19670815 199512 1 003</p>
-            </div>
-          </div>
+  <div className="text-left">
+    <p className="text-sm mb-1">Kudus, 6 Mei 2024</p>
+    <p className="text-sm mb-2">Kepala Sekolah,</p>
+    <img className="w-52 mb-2" src="/TTD-removebg-preview.png" alt="Placeholder" />
+    <p className="text-lg underline mb-1">BUDI SUSANTO, S.Pd, M.Pd</p>
+    <p className="text-sm">NIP. 19670815 199512 1 003</p>
+  </div>
+</div>
             <div className="mx-auto pt-3 mt-4 w-full border-t-4 text-sm text-gray-500 text-center">
   <p><span className="font-bold">Catatan</span> : Surat ini mohon dicetak/print dan digunakan sebagai bukti untuk pengambilan SKL</p>
 </div>
