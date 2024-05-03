@@ -168,11 +168,11 @@ const shortenName = (name : string) => {
           </p>
 <div className="flex justify-end mb-4">
   <div className="text-left">
-    <p className="text-sm -mb-2">Kudus, 6 Mei 2024</p>
+    <p className="text-sm">Kudus, 6 Mei 2024</p>
     <p className="text-sm -mb-6 z-10">Kepala Sekolah,</p>
-    <img className="w-52 -z-10" src="/TTD-removebg-preview.png" alt="Placeholder" />
-    <p className="text-lg underline -mt-10 z-10">BUDI SUSANTO, S.Pd, M.Pd</p>
-    <p className="text-sm -mt-7">NIP. 19670815 199512 1 003</p>
+    <img className="w-52 -z-10 mr-5" src="/TTD-removebg-preview.png" alt="Placeholder" />
+    <p className="text-lg underline -mt-7 z-10">BUDI SUSANTO, S.Pd, M.Pd</p>
+    <p className="text-sm">NIP. 19670815 199512 1 003</p>
   </div>
 </div>
             <div className="mx-auto pt-3 mt-4 w-full border-t-4 text-sm text-gray-500 text-center">
