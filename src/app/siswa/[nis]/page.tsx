@@ -170,6 +170,7 @@ const shortenName = (name : string) => {
             <div className="text-right">
               <p className="text-sm mr-[121px]">Kudus, 6 Mei 2024</p>
               <p className="text-sm mr-[138px] mb-16">Kepala Sekolah,</p>
+              <img className="w-7" src="/TTD.jpg" />
               <p className="mt-4 mr-3 md:mr-2 text-lg underline">BUDI SUSANTO, S.Pd, M.Pd</p>
               <p className="text-sm mr-[63px] md:mr-[65px]">NIP. 19670815 199512 1 003</p>
             </div>
