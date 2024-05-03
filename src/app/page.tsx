@@ -117,6 +117,7 @@ export default function Home() {
           <input
             type="number"
             value={nisn}
+            required
             placeholder="Masukkan NISN"
             onChange={(e) => setnisn(e.target.value)}
             className="w-full mt-5 p-1 md:p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
