@@ -154,7 +154,7 @@ export default function Home() {
           </svg>
           <p className="text-xs md:text-sm">
             Jika Anda lupa NISN, silakan hubungi admin
-            sekolah, wali kelas atau <a className="text-blue-500" href="https://nisn.data.kemdikbud.go.id/index.php/Cindex/formcaribynama">link berikut</a>
+            sekolah, wali kelas atau <a className="text-blue-500 font-bold" href="https://nisn.data.kemdikbud.go.id/index.php/Cindex/formcaribynama">link berikut</a>
           </p>
         </div>
         {error && <p className="text-red-500 font-bold mt-2 text-center">{error}</p>}
