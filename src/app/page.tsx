@@ -90,7 +90,7 @@ export default function Home() {
 
   useEffect(() => {
     if (isDisabled || !countdown) {
-      router.replace("/");
+      // router.replace("/");
     }
   }, [isDisabled, countdown, router]);
 
