@@ -267,6 +267,32 @@ const shortenName = (name : string) => {
         </svg>
         Download Bukti Kelulusan
       </button>
+     <footer className="text-center text-xs text-gray-500 mt-8">
+  &copy; Ismail TJKT {new Date().getFullYear()}. |{" "}
+  <a
+    href="https://github.com/username"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-indigo-600 hover:underline flex items-center justify-center gap-1"
+  >
+    <svg
+      xmlns="https://github.com/KaivanKeren"
+      className="w-4 h-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path
+        d="M12 2C6.477 2 2 6.477 2 12c0 4.419 2.865 8.166 6.839 9.488.5.092.682-.216.682-.482 0-.237-.009-.866-.014-1.701-2.782.604-3.37-1.338-3.37-1.338-.454-1.154-1.108-1.463-1.108-1.463-.905-.617.068-.604.068-.604 1.002.07 1.531 1.03 1.531 1.03.893 1.531 2.344 1.09 2.913.833.091-.643.349-1.088.636-1.338-2.224-.252-4.563-1.118-4.563-4.97 0-1.098.393-1.997 1.032-2.698-.103-.252-.448-1.277.098-2.66 0 0 .845-.27 2.77 1.03.803-.223 1.658-.334 2.51-.338.851.004 1.705.115 2.51.338 1.924-1.3 2.768-1.03 2.768-1.03.547 1.383.202 2.408.1 2.66.64.701 1.03 1.6 1.03 2.698 0 3.861-2.344 4.714-4.574 4.961.36.313.679.926.679 1.864 0 1.346-.012 2.429-.012 2.759 0 .269.18.581.688.482C19.139 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+      ></path>
+    </svg>
+    GitHub
+  </a>
+</footer>
+
     </div>
   );
 }
