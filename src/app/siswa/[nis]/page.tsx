@@ -176,7 +176,7 @@ const shortenName = (name : string) => {
     <p className="text-sm">NIP. 19670815 199512 1 003</p>
   </div>
 </div>
-            <div className="mx-auto pt-3 mt-4 w-full border-t-4 text-sm text-gray-500 text-center">
+            <div className="mx-auto pt-1 mt-4 w-full border-t-4 text-sm text-gray-500 text-center">
   <p><span className="font-bold">Catatan</span> : Surat ini mohon dicetak/print dan digunakan sebagai bukti untuk pengambilan SKL</p>
 </div>
         </div>
