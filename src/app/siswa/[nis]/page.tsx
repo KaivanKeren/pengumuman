@@ -160,7 +160,7 @@ const shortenName = (name : string) => {
           </div>
           <div className="text-center mb-8">
             <p className="text-lg leading-6">Dinyatakan</p>
-            <p className="text-3xl font-bold">{siswa.status}</p>
+            <p className="text-2xl font-bold">{siswa.status}</p>
           </div>
           <p className="text-justify mb-8">
             dari satuan pendidikan berdasarkan kriteria kelulusan Sekolah
