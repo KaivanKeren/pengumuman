@@ -267,6 +267,7 @@ const shortenName = (name : string) => {
         </svg>
         Download Bukti Kelulusan
       </button>
+    </div>
      <footer className="text-center text-xs text-gray-500 mt-8">
   &copy; Ismail TJKT {new Date().getFullYear()}. |{" "}
   <a
@@ -292,7 +293,5 @@ const shortenName = (name : string) => {
     GitHub
   </a>
 </footer>
-
-    </div>
   );
 }
