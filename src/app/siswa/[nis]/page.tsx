@@ -49,15 +49,15 @@ export default function Siswa() {
     html2pdf().from(element).set(opt).save();
   };
 
-const shortenName = (name : string) => {
+  const shortenName = (name: string) => {
     const words = name.split(" ");
     if (words.length === 5) {
-        words[3] = words[3].charAt(0) + ".";
-        words[4] = words[4].charAt(0) + ".";
-        return words.join(" ");
+      words[3] = words[3].charAt(0) + ".";
+      words[4] = words[4].charAt(0) + ".";
+      return words.join(" ");
     }
     return name;
-};
+  };
 
 
   if (loading)
@@ -78,19 +78,18 @@ const shortenName = (name : string) => {
   if (!siswa) return <div>Data siswa tidak ditemukan</div>;
 
   return (
-    <div className="max-w-4xl mx-5 md:mx-auto bg-white rounded-md shadow-md p-4 sm:p-8 my-8">
+    <><div className="max-w-4xl mx-5 md:mx-auto bg-white rounded-md shadow-md p-4 sm:p-8 my-8">
       <div className="max-w-lg hidden mx-auto bg-white border rounded-md p-8 my-8">
         <div id="siswa-info" className="flex flex-col p-14 pb-1.5 -mt-6">
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
- <img
-  src="/Logo Provinsi Jawa Tengah.png"
-  width={100}
-  height={120}
-  alt="Logo Provinsi Jawa Tengah"
-  className="mt-5 mr-3 md:mr-0"
-/>
-</div>
+              <img
+                src="/Logo Provinsi Jawa Tengah.png"
+                width={100}
+                height={120}
+                alt="Logo Provinsi Jawa Tengah"
+                className="mt-5 mr-3 md:mr-0" />
+            </div>
 
             <div className="-ml-80 border-spacing-x-3 pb-5 border-b-4 border-black">
               <p className="text-center text-lg font-bold">
@@ -166,19 +165,19 @@ const shortenName = (name : string) => {
             dari satuan pendidikan berdasarkan kriteria kelulusan Sekolah
             Menengah Kejuruan Negeri 2 Kudus Tahun Pelajaran 2023/2024.
           </p>
-<div className="flex justify-end mb-4">
-  <div className="text-left">
-    <p className="text-sm">Kudus, 6 Mei 2024</p>
-    <p className="text-sm mb-5 z-10">Kepala Sekolah,</p>
-    <img className="w-20 -z-10" src="/Picture1.png" alt="Placeholder" />
-    <p className="text-lg underline z-10">BUDI SUSANTO, S.Pd, M.Pd</p>
-    <p className="text-sm">Pembina Utama Muda</p>
-    <p className="text-sm">NIP. 19670815 199512 1 003</p>
-  </div>
-</div>
-            <div className="mx-auto pt-1 mt-4 w-full border-t-4 text-sm text-gray-500 text-center">
-  <p><span className="font-bold">Catatan</span> : Surat ini mohon dicetak/print dan digunakan sebagai bukti untuk pengambilan SKL</p>
-</div>
+          <div className="flex justify-end mb-4">
+            <div className="text-left">
+              <p className="text-sm">Kudus, 6 Mei 2024</p>
+              <p className="text-sm mb-5 z-10">Kepala Sekolah,</p>
+              <img className="w-20 -z-10" src="/Picture1.png" alt="Placeholder" />
+              <p className="text-lg underline z-10">BUDI SUSANTO, S.Pd, M.Pd</p>
+              <p className="text-sm">Pembina Utama Muda</p>
+              <p className="text-sm">NIP. 19670815 199512 1 003</p>
+            </div>
+          </div>
+          <div className="mx-auto pt-1 mt-4 w-full border-t-4 text-sm text-gray-500 text-center">
+            <p><span className="font-bold">Catatan</span> : Surat ini mohon dicetak/print dan digunakan sebagai bukti untuk pengambilan SKL</p>
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 text-xs sm:text-sm md:text-base mb-4 md:p-10 bg-gray-100 border rounded-md shadow-md">
@@ -262,11 +261,15 @@ const shortenName = (name : string) => {
         >
           <path
             fill="#ffffff"
-            d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"
-          />
+            d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
         </svg>
         Download Bukti Kelulusan
       </button>
-    </div>
+    </div><footer className="bg-white rounded-lg shadow m-4">
+        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+          <span className="text-sm text-gray-500 sm:text-center">© 2024 <a href="https://github.com/KaivanKeren/" className="hover:underline text-blue-500">Ismail</a>. TJKT
+          </span>
+        </div>
+      </footer></>
   );
 }
