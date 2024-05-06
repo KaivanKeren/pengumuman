@@ -159,7 +159,7 @@ export default function Home() {
         </div>
         {error && <p className="text-red-500 font-bold mt-2 text-center">{error}</p>}
       </div>
-      <footer className="text-center text-xs text-gray-500 mt-8">
+     <footer className="fixed bottom-0 left-0 right-0 bg-gray-200 py-2 text-center text-xs text-gray-500">
   &copy; Ismail TJKT {new Date().getFullYear()}. |{" "}
   <a
     href="https://github.com/username"
