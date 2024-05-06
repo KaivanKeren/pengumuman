@@ -80,7 +80,7 @@ const shortenName = (name : string) => {
   return (
     <div className="max-w-4xl mx-5 md:mx-auto bg-white rounded-md shadow-md p-4 sm:p-8 my-8">
       <div className="max-w-lg hidden mx-auto bg-white border rounded-md p-8 my-8">
-        <div id="siswa-info" className="flex flex-col p-14 pb-1 -mt-6">
+        <div id="siswa-info" className="flex flex-col p-14 pb-1.5 -mt-6">
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
  <img
