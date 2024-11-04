@@ -111,7 +111,7 @@ export default function Home() {
           <form onSubmit={handleSubmit} className="mb-2 md:mb-4">
             <p className="text-sm md:text-base text-gray-800 text-center">
               Masukkan 10 Angka <b className="text-black">NISN</b>
-              Yang Terdaftar
+              {" "}Yang Terdaftar
             </p>
             <input
               type="number"
