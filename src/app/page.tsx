@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { LoaderCircle } from "lucide-react";
 
 export default function Home() {
   const [nisn, setnisn] = useState("");
@@ -110,8 +111,8 @@ export default function Home() {
           </p>
           <form onSubmit={handleSubmit} className="mb-2 md:mb-4">
             <p className="text-sm md:text-base text-gray-800 text-center">
-              Masukkan 10 Angka <b className="text-black">NISN</b>
-              {" "}Yang Terdaftar
+              Masukkan 10 Angka <b className="text-black">NISN</b> Yang
+              Terdaftar
             </p>
             <input
               type="number"
@@ -129,16 +130,9 @@ export default function Home() {
               }`}
             >
               <span className="absolute left-0 inset-y-0 flex items-center pl-3">
-                <svg
+                <LoaderCircle
                   className={`h-5 w-5 ${loading ? "animate-spin" : "hidden"}`}
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    fill="#eff3f6"
-                    d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z"
-                  />
-                </svg>
+                />
               </span>
               Submit
             </button>
