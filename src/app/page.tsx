@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Search, Clock } from "lucide-react";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [nisn, setNisn] = useState("");
@@ -85,7 +86,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center p-4">
+      <div className="min-h-[90vh] flex items-center justify-center p-4">
         <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden">
           {/* Header Section */}
           <div className="bg-blue-600 text-white p-6 text-center">
@@ -168,21 +169,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="bg-white rounded-lg shadow m-4">
-        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center">
-            © 2024{" "}
-            <a
-              href="https://github.com/KaivanKeren/"
-              target="_blank"
-              className="hover:underline text-blue-500"
-            >
-              Ismail
-            </a>
-            . TJKT
-          </span>
-        </div>
-      </footer>
+
+      {/* Footer Section */}
+      <Footer />
     </>
   );
 }

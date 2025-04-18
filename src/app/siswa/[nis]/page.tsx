@@ -5,6 +5,7 @@ import axios from "axios";
 import html2pdf from "html2pdf.js";
 import Image from "next/image";
 import { Download } from "lucide-react";
+import Footer from "@/app/components/Footer";
 
 interface Siswa {
   program_keahlian: string;
@@ -278,21 +279,7 @@ export default function Siswa() {
           Download Bukti Kelulusan
         </button>
       </div>
-      <footer className="bg-white rounded-lg shadow m-4">
-        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center">
-            © 2024{" "}
-            <a
-              href="https://github.com/KaivanKeren/"
-              target="_blank"
-              className="hover:underline text-blue-500"
-            >
-              Ismail
-            </a>
-            . TJKT
-          </span>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
