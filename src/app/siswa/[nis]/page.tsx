@@ -6,6 +6,7 @@ import html2pdf from "html2pdf.js";
 import Image from "next/image";
 import { Download } from "lucide-react";
 import Footer from "@/app/components/Footer";
+import { Separator } from "@/components/ui/separator";
 
 interface Siswa {
   program_keahlian: string;
@@ -84,17 +85,17 @@ export default function Siswa() {
         <div className="max-w-lg hidden mx-auto bg-white border rounded-md p-8 my-8">
           <div id="siswa-info" className="flex flex-col p-14 pb-1.5 -mt-6">
             <div className="grid grid-cols-2 gap-4 mb-4">
-              <div>
+              <div className="ml-4">
                 <Image
                   src="/Logo Provinsi Jawa Tengah.png"
                   width={100}
                   height={120}
                   alt="Logo Provinsi Jawa Tengah"
-                  className="mt-5 mr-3 md:mr-0"
+                  className="mt-5"
                 />
               </div>
 
-              <div className="-ml-80 border-spacing-x-3 pb-5 border-b-4 border-black">
+              <div className="-ml-72">
                 <p className="text-center text-lg font-bold">
                   PEMERINTAH PROVINSI JAWA TENGAH
                 </p>
@@ -120,20 +121,21 @@ export default function Siswa() {
                 </p>
               </div>
             </div>
-            <h2 className="text-lg font-bold text-center mb-2">
+            <Separator className="h-1 bg-black" orientation="horizontal" />
+            <h2 className="text-lg font-bold text-center">
               SURAT PENGUMUMAN KELULUSAN
             </h2>
-            <h3 className="text-lg font-bold text-center mb-2">
+            <h3 className="text-lg font-bold text-center">
               SMK NEGERI 2 KUDUS
             </h3>
-            <h3 className="text-lg font-bold text-center mb-6">
-              TAHUN PELAJARAN 2023/2024
+            <h3 className="text-lg font-bold text-center mb-3">
+              TAHUN PELAJARAN {new Date().getFullYear() - 1}/{new Date().getFullYear()}
             </h3>
-            <p className="text-center mb-4">Nomor : 421.4/1097</p>
+            <p className="text-center underline mb-4">Nomor : 421.4/1097</p>
             <div className="grid grid-cols-2 gap-4 mb-4">
-              <div>
+              <div className="text-center">
                 <p className="font-bold">Program Keahlian</p>
-                <p className="font-bold">Kompetensi Keahlian</p>
+                <p className="font-bold ml-5">Kompetensi Keahlian</p>
               </div>
               <div>
                 <p>: {siswa.program_keahlian}</p>
@@ -162,15 +164,15 @@ export default function Siswa() {
             </div>
             <div className="text-center mb-8">
               <p className="text-lg leading-6">Dinyatakan</p>
-              <p className="text-2xl font-bold">{siswa.status}</p>
+              <p className="text-3xl font-bold uppercase">{siswa.status}</p>
             </div>
             <p className="text-justify mb-8">
               dari satuan pendidikan berdasarkan kriteria kelulusan Sekolah
-              Menengah Kejuruan Negeri 2 Kudus Tahun Pelajaran 2023/2024.
+              Menengah Kejuruan Negeri 2 Kudus Tahun Pelajaran {new Date().getFullYear() - 1}/{new Date().getFullYear()}.
             </p>
             <div className="flex justify-end mb-4">
               <div className="text-left">
-                <p className="text-sm">Kudus, 6 Mei 2024</p>
+                <p className="text-sm">Kudus, 6 Mei {new Date().getFullYear()}</p>
                 <p className="text-sm mb-5 z-10">Kepala Sekolah,</p>
                 <Image
                   width={100}
@@ -179,14 +181,15 @@ export default function Siswa() {
                   src="/Picture1.png"
                   alt="TTD"
                 />
-                <p className="text-lg underline z-10">
+                <p className="text-lg font-bold z-10">
                   BUDI SUSANTO, S.Pd, M.Pd
                 </p>
                 <p className="text-sm">Pembina Utama Muda</p>
                 <p className="text-sm">NIP. 19670815 199512 1 003</p>
               </div>
             </div>
-            <div className="mx-auto pt-1 mt-4 w-full border-t-4 text-sm text-gray-500 text-center">
+            <div className="mx-auto pt-1 mt-4 w-full text-center">
+              <Separator className="h-1" orientation="horizontal" />
               <p>
                 <span className="font-bold">Catatan</span> : Surat ini mohon
                 dicetak/print dan digunakan sebagai bukti untuk pengambilan SKL
