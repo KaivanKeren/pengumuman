@@ -85,13 +85,16 @@ export default function Siswa() {
         <div className="max-w-lg hidden mx-auto bg-white border rounded-md p-8 my-8">
           <div id="siswa-info" className="flex flex-col p-14 pb-1.5 -mt-6">
             <div className="grid grid-cols-2 gap-4 mb-4">
-              <div className="ml-4">
+              <div className="ml-4 mt-2">
                 <Image
                   src="/Logo Provinsi Jawa Tengah.png"
-                  width={100}
-                  height={120}
+                  width={0}
+                  height={0}
+                  sizes="(max-width: 768px) 17vw, 100px"
                   alt="Logo Provinsi Jawa Tengah"
-                  className="mt-5"
+                  className="w-auto h-auto max-w-full"
+                  style={{ objectFit: "contain", maxHeight: "120px" }}
+                  priority
                 />
               </div>
 
@@ -129,7 +132,8 @@ export default function Siswa() {
               SMK NEGERI 2 KUDUS
             </h3>
             <h3 className="text-lg font-bold text-center mb-3">
-              TAHUN PELAJARAN {new Date().getFullYear() - 1}/{new Date().getFullYear()}
+              TAHUN PELAJARAN {new Date().getFullYear() - 1}/
+              {new Date().getFullYear()}
             </h3>
             <p className="text-center underline mb-4">Nomor : 421.4/1097</p>
             <div className="grid grid-cols-2 gap-4 mb-4">
@@ -168,16 +172,22 @@ export default function Siswa() {
             </div>
             <p className="text-justify mb-8">
               dari satuan pendidikan berdasarkan kriteria kelulusan Sekolah
-              Menengah Kejuruan Negeri 2 Kudus Tahun Pelajaran {new Date().getFullYear() - 1}/{new Date().getFullYear()}.
+              Menengah Kejuruan Negeri 2 Kudus Tahun Pelajaran{" "}
+              {new Date().getFullYear() - 1}/{new Date().getFullYear()}.
             </p>
             <div className="flex justify-end mb-4">
               <div className="text-left">
-                <p className="text-sm">Kudus, 6 Mei {new Date().getFullYear()}</p>
+                <p className="text-sm">
+                  Kudus, 6 Mei {new Date().getFullYear()}
+                </p>
                 <p className="text-sm mb-5 z-10">Kepala Sekolah,</p>
                 <Image
-                  width={100}
-                  height={120}
-                  className="w-20 -z-10"
+                  width={0}
+                  height={0}
+                  sizes="(max-width: 768px) 15vw, 80px"
+                  className="w-auto h-auto max-w-full"
+                  style={{ objectFit: "contain", maxHeight: "100px" }}
+                  priority
                   src="/Picture1.png"
                   alt="TTD"
                 />
