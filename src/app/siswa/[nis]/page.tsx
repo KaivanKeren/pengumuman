@@ -276,15 +276,13 @@ export default function Siswa() {
                     src={
                       formData.ttd_kepala_sekolah.startsWith("data:")
                         ? formData.ttd_kepala_sekolah
-                        : `${storageUrl}/${formData.ttd_kepala_sekolah.replace(
-                            /^\/+/,
-                            ""
-                          )}`
+                        : `${
+                            process.env.NEXT_PUBLIC_STORAGE_URL
+                          }/${formData.ttd_kepala_sekolah.replace(/^\/+/, "")}`
                     }
                     alt="TTD"
                   />
                 )}
-
                 <p className="text-lg font-bold z-10">
                   {formData.nama_kepala_sekolah}
                 </p>
