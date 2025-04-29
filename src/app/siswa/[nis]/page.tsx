@@ -233,14 +233,14 @@ export default function Siswa() {
               <div>
                 <p>Nama</p>
                 <p>Tempat dan Tanggal Lahir</p>
-                <p>Nama Orang Tua/Wali</p>
+                {/* <p>Nama Orang Tua/Wali</p> */}
                 <p>Nomor Induk Siswa</p>
                 <p>Nomor Induk Siswa Nasional</p>
               </div>
               <div>
                 <p>: {shortenName(siswa.nama)}</p>
                 <p>: {siswa.tempat_tanggal_lahir}</p>
-                <p>: {siswa.nama_orangtua}</p>
+                {/* <p>: {siswa.nama_orangtua}</p> */}
                 <p>: {siswa.nis}</p>
                 <p>: {siswa.nisn}</p>
               </div>
@@ -305,7 +305,7 @@ export default function Siswa() {
           <div className="hidden font-bold md:block">
             <p>Nama</p>
             <p>Tempat dan Tanggal Lahir</p>
-            <p>Nama Orang Tua/Wali</p>
+            {/* <p>Nama Orang Tua/Wali</p> */}
             <p>Nomor Induk Siswa</p>
             <p>Nomor Induk Siswa Nasional</p>
             <p>Program Keahlian</p>
@@ -324,13 +324,13 @@ export default function Siswa() {
               <span className="hidden md:block">:</span>
               {siswa.tempat_tanggal_lahir}
             </p>
-            <p className="mb-2 md:mb-0 md:flex md:gap-1">
+            {/* <p className="mb-2 md:mb-0 md:flex md:gap-1">
               <span className="block md:hidden font-bold">
                 Nama Orang Tua/Wali :
               </span>
               <span className="hidden md:block">:</span>
               {siswa.nama_orangtua}
-            </p>
+            </p> */}
             <p className="mb-2 md:mb-0 md:flex md:gap-1">
               <span className="block md:hidden font-bold">
                 Nomor Induk Siswa :
