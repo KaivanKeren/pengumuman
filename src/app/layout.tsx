@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/next.svg" type="image/png" sizes="32x32" />
       <body className={inter.className}>
+        <Analytics />
         <Navbar />
         {children}
         </body>
