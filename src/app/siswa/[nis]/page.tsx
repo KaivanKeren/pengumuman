@@ -269,7 +269,7 @@ export default function Siswa() {
                   <Image
                     width={0}
                     height={0}
-                    sizes="(max-width: 768px) 15vw, 80px"
+                    sizes="(max-width: 778px) 15vw, 80px"
                     className="w-auto h-auto max-w-full"
                     style={{ objectFit: "contain", maxHeight: "100px" }}
                     priority
