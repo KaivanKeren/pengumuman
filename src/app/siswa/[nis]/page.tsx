@@ -264,14 +264,20 @@ export default function Siswa() {
                   )}
                 </p>
 
-                <p className="text-sm mb-5 z-10">Kepala Sekolah,</p>
+                <p className="text-sm z-10">Kepala Sekolah,</p>
                 {formData.ttd_kepala_sekolah && (
                   <Image
                     width={0}
                     height={0}
-                    sizes="(max-width: 778px) 15vw, 80px"
-                    className="w-auto h-auto max-w-full"
-                    style={{ objectFit: "contain", maxHeight: "100px" }}
+                    sizes="(max-width: 778px) 35vw, 160px"
+                    className="w-auto h-auto max-w-full -my-2"
+                    style={{
+                      objectFit: "contain",
+                      maxHeight: "160px",
+                      marginTop: "-18px",
+                      marginLeft: "-60px",
+                      marginBottom: "-40px",
+                    }}
                     priority
                     src={
                       formData.ttd_kepala_sekolah.startsWith("data:")
