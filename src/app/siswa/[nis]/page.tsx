@@ -181,7 +181,7 @@ export default function Siswa() {
                   PEMERINTAH PROVINSI JAWA TENGAH
                 </p>
                 <p className="text-center text-lg font-bold">
-                  DINAS PENDIDIKAN DAN KEBUDAYAAN
+                  DINAS PENDIDIKAN
                 </p>
                 <p className="text-center text-2xl font-bold">
                   SMK NEGERI 2 KUDUS
@@ -202,6 +202,19 @@ export default function Siswa() {
                 </p>
               </div>
             </div>
+            <div className="ml-4 mt-2">
+                <Image
+                  src="/cropped-SMKN-2-Kudus.png"
+                  width={0}
+                  height={0}
+                  sizes="(max-width: 768px) 17vw, 100px"
+                  alt="Logo Provinsi Jawa Tengah"
+                  className="w-auto h-auto max-w-full"
+                  style={{ objectFit: "contain", maxHeight: "120px" }}
+                  priority
+                />
+              </div>
+
             <Separator className="h-1 bg-black" orientation="horizontal" />
             <h2 className="text-lg font-bold text-center">
               SURAT PENGUMUMAN KELULUSAN
