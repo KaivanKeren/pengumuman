@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Download } from "lucide-react";
 import Footer from "@/app/components/Footer";
 import { Separator } from "@/components/ui/separator";
+import { cn } from "../../../lib/utils";
 
 interface Siswa {
   program_keahlian: string;
@@ -97,9 +98,8 @@ export default function Siswa() {
         if (data.ttd_kepala_sekolah) {
           const signatureUrl = data.ttd_kepala_sekolah.startsWith("data:")
             ? data.ttd_kepala_sekolah
-            : `${
-                process.env.NEXT_PUBLIC_STORAGE_URL
-              }/${data.ttd_kepala_sekolah.replace(/^\/+/, "")}`;
+            : `${process.env.NEXT_PUBLIC_STORAGE_URL
+            }/${data.ttd_kepala_sekolah.replace(/^\/+/, "")}`;
 
           setSignatureFile([
             {
@@ -142,16 +142,16 @@ export default function Siswa() {
 
   if (loading)
     return (
-      <div className="flex items-center justify-center h-screen">
+      <div className={cn('flex', 'items-center', 'justify-center', 'h-screen')}>
         <div className="relative">
-          <div className="h-24 w-24 rounded-full border-t-8 border-b-8 border-gray-200"></div>
-          <div className="absolute top-0 left-0 h-24 w-24 rounded-full border-t-8 border-b-8 border-blue-500 animate-spin"></div>
+          <div className={cn('h-24', 'w-24', 'rounded-full', 'border-t-8', 'border-b-8', 'border-gray-200')}></div>
+          <div className={cn('absolute', 'top-0', 'left-0', 'h-24', 'w-24', 'rounded-full', 'border-t-8', 'border-b-8', 'border-blue-500', 'animate-spin')}></div>
         </div>
       </div>
     );
   if (error)
     return (
-      <div className="text-red-500 font-bold text-2xl justify-center items-center text-center mt-5">
+      <div className={cn('text-red-500', 'font-bold', 'text-2xl', 'justify-center', 'items-center', 'text-center', 'mt-5')}>
         {error}
       </div>
     );
@@ -159,90 +159,90 @@ export default function Siswa() {
 
   return (
     <>
-      <div className="max-w-4xl mx-5 md:mx-auto bg-white rounded-md shadow-md p-4 sm:p-8 my-8">
-        <div className="max-w-lg hidden mx-auto bg-white border rounded-md p-8 my-8">
-          <div id="siswa-info" className="flex flex-col p-14 pb-1.5 -mt-6">
-            <div className="grid grid-cols-2 gap-4 mb-4">
-              <div className="ml-4 mt-2">
+      <div className={cn('max-w-4xl', 'mx-5', 'md:mx-auto', 'bg-white', 'rounded-md', 'shadow-md', 'p-4', 'sm:p-8', 'my-8')}>
+        <div className={cn('max-w-lg', 'hidden', 'mx-auto', 'bg-white', 'border', 'rounded-md', 'p-8', 'my-8')}>
+          <div id="siswa-info" className={cn('flex', 'flex-col', 'p-14', 'pb-1.5', '-mt-6')}>
+            <div className={cn('flex', 'items-center', 'gap-4', 'mb-4')}>
+              <div className={cn('flex-shrink-0', 'ml-4', 'mt-2')}>
                 <Image
                   src="/Logo Provinsi Jawa Tengah.png"
                   width={0}
                   height={0}
                   sizes="(max-width: 768px) 17vw, 100px"
                   alt="Logo Provinsi Jawa Tengah"
-                  className="w-auto h-auto max-w-full"
+                  className={cn('w-auto', 'h-auto', 'max-w-full')}
                   style={{ objectFit: "contain", maxHeight: "120px" }}
                   priority
                 />
               </div>
 
-              <div className="-ml-72">
-                <p className="text-center text-lg font-bold">
+              <div className="flex-1">
+                <p className={cn('text-center', 'text-lg', 'font-bold')}>
                   PEMERINTAH PROVINSI JAWA TENGAH
                 </p>
-                <p className="text-center text-lg font-bold">
+                <p className={cn('text-center', 'text-lg', 'font-bold')}>
                   DINAS PENDIDIKAN
                 </p>
-                <p className="text-center text-2xl font-bold">
+                <p className={cn('text-center', 'text-2xl', 'font-bold')}>
                   SMK NEGERI 2 KUDUS
                 </p>
-                <p className="text-center text-sm">
+                <p className={cn('text-center', 'text-sm')}>
                   Jalan : Desa Rejosari Dawe Kudus Kode Pos 59353 Telp. (0291)
                   4101149
                 </p>
-                <p className="text-center text-sm">
+                <p className={cn('text-center', 'text-sm')}>
                   Website &nbsp;
                   <a
                     href="https://www.smkn2kudus.sch.id"
-                    className="text-blue-500 underline"
+                    className={cn('text-blue-500', 'underline')}
                   >
                     www.smkn2kudus.sch.id
                   </a>
                   , Surat Elektronik smk2kudus@gmail.com
                 </p>
               </div>
-            <div className="ml-4 mt-2">
+              <div className={cn('flex-shrink-0', '-mr-4')}>
                 <Image
                   src="/cropped-SMKN-2-Kudus.png"
                   width={0}
                   height={0}
                   sizes="(max-width: 768px) 17vw, 100px"
-                  alt="Logo Provinsi Jawa Tengah"
-                  className="w-auto h-auto max-w-full"
+                  alt="Logo SMKN 2 Kudus"
+                  className={cn('w-auto', 'h-auto', 'max-w-full')}
                   style={{ objectFit: "contain", maxHeight: "120px" }}
                   priority
                 />
               </div>
             </div>
 
-            <Separator className="h-1 bg-black" orientation="horizontal" />
-            <h2 className="text-lg font-bold text-center">
+            <Separator className={cn('h-1', 'bg-black')} orientation="horizontal" />
+            <h2 className={cn('text-lg', 'font-bold', 'text-center')}>
               SURAT PENGUMUMAN KELULUSAN
             </h2>
-            <h3 className="text-lg font-bold text-center">
+            <h3 className={cn('text-lg', 'font-bold', 'text-center')}>
               SMK NEGERI 2 KUDUS
             </h3>
-            <h3 className="text-lg font-bold text-center mb-3">
+            <h3 className={cn('text-lg', 'font-bold', 'text-center', 'mb-3')}>
               TAHUN PELAJARAN {formData.tahun_ajaran}
             </h3>
-            <p className="text-center underline mb-4">
+            <p className={cn('text-center', 'underline', 'mb-4')}>
               Nomor : {formData.nomor_surat}
             </p>
-            <div className="grid grid-cols-2 gap-4 mb-4">
+            <div className={cn('grid', 'grid-cols-2', 'gap-4', 'mb-4')}>
               <div className="text-center">
                 <p className="font-bold">Program Keahlian</p>
-                <p className="font-bold ml-5">Kompetensi Keahlian</p>
+                <p className={cn('font-bold', 'ml-5')}>Kompetensi Keahlian</p>
               </div>
               <div>
                 <p>: {siswa.program_keahlian}</p>
                 <p>: {siswa.kompetensi_keahlian}</p>
               </div>
             </div>
-            <p className="text-justify mb-4">
+            <p className={cn('text-justify', 'mb-4')}>
               Yang bertanda tangan di bawah ini, Kepala Sekolah Menengah
               Kejuruan Negeri 2 Kudus, Provinsi Jawa Tengah menerangkan bahwa :
             </p>
-            <div className="grid grid-cols-2 gap-4 mb-4">
+            <div className={cn('grid', 'grid-cols-2', 'gap-4', 'mb-4')}>
               <div>
                 <p>Nama</p>
                 <p>Tempat dan Tanggal Lahir</p>
@@ -258,16 +258,16 @@ export default function Siswa() {
                 <p>: {siswa.nisn}</p>
               </div>
             </div>
-            <div className="text-center mb-8">
-              <p className="text-lg leading-6">Dinyatakan</p>
-              <p className="text-3xl font-bold uppercase">{siswa.status}</p>
+            <div className={cn('text-center', 'mb-8')}>
+              <p className={cn('text-lg', 'leading-6')}>Dinyatakan</p>
+              <p className={cn('text-3xl', 'font-bold', 'uppercase')}>{siswa.status}</p>
             </div>
-            <p className="text-justify mb-8">
+            <p className={cn('text-justify', 'mb-8')}>
               dari satuan pendidikan berdasarkan kriteria kelulusan Sekolah
               Menengah Kejuruan Negeri 2 Kudus Tahun Pelajaran{" "}
               {formData.tahun_ajaran}.
             </p>
-            <div className="flex justify-end mb-4">
+            <div className={cn('flex', 'justify-end', 'mb-4')}>
               <div className="text-left">
                 <p className="text-sm">
                   Kudus,{" "}
@@ -277,13 +277,13 @@ export default function Siswa() {
                   )}
                 </p>
 
-                <p className="text-sm z-10">Kepala Sekolah,</p>
+                <p className={cn('text-sm', 'z-10')}>Kepala Sekolah,</p>
                 {formData.ttd_kepala_sekolah && (
                   <Image
                     width={0}
                     height={0}
                     sizes="(max-width: 778px) 35vw, 160px"
-                    className="w-auto h-auto max-w-full -my-2"
+                    className={cn('w-auto', 'h-auto', 'max-w-full', '-my-2')}
                     style={{
                       objectFit: "contain",
                       maxHeight: "160px",
@@ -295,21 +295,20 @@ export default function Siswa() {
                     src={
                       formData.ttd_kepala_sekolah.startsWith("data:")
                         ? formData.ttd_kepala_sekolah
-                        : `${
-                            process.env.NEXT_PUBLIC_STORAGE_URL
-                          }/${formData.ttd_kepala_sekolah.replace(/^\/+/, "")}`
+                        : `${process.env.NEXT_PUBLIC_STORAGE_URL
+                        }/${formData.ttd_kepala_sekolah.replace(/^\/+/, "")}`
                     }
                     alt="TTD"
                   />
                 )}
-                <p className="text-lg font-bold z-10">
+                <p className={cn('text-lg', 'font-bold', 'z-10')}>
                   {formData.nama_kepala_sekolah}
                 </p>
                 <p className="text-sm">{formData.jabatan_kepala_sekolah}</p>
                 <p className="text-sm">NIP. {formData.nip_kepala_sekolah}</p>
               </div>
             </div>
-            <div className="mx-auto pt-1 mt-4 w-full text-center">
+            <div className={cn('mx-auto', 'pt-1', 'mt-4', 'w-full', 'text-center')}>
               <Separator className="h-1" orientation="horizontal" />
               <p>
                 <span className="font-bold">Catatan</span> : Surat ini mohon
@@ -318,8 +317,8 @@ export default function Siswa() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 text-xs sm:text-sm md:text-base mb-4 md:p-10 bg-gray-100 border rounded-md shadow-md">
-          <div className="hidden font-bold md:block">
+        <div className={cn('grid', 'grid-cols-1', 'md:grid-cols-2', 'gap-4', 'p-4', 'text-xs', 'sm:text-sm', 'md:text-base', 'mb-4', 'md:p-10', 'bg-gray-100', 'border', 'rounded-md', 'shadow-md')}>
+          <div className={cn('hidden', 'font-bold', 'md:block')}>
             <p>Nama</p>
             <p>Tempat dan Tanggal Lahir</p>
             {/* <p>Nama Orang Tua/Wali</p> */}
@@ -329,67 +328,67 @@ export default function Siswa() {
             <p>Kompetensi Keahlian</p>
           </div>
           <div>
-            <p className="mb-2 md:mb-0 md:flex md:gap-1">
-              <span className="block md:hidden font-bold">Nama :</span>
-              <span className="hidden md:block">:</span>
+            <p className={cn('mb-2', 'md:mb-0', 'md:flex', 'md:gap-1')}>
+              <span className={cn('block', 'md:hidden', 'font-bold')}>Nama :</span>
+              <span className={cn('hidden', 'md:block')}>:</span>
               {shortenName(siswa.nama)}
             </p>
-            <p className="mb-2 md:mb-0 md:flex md:gap-1">
-              <span className="block md:hidden font-bold">
+            <p className={cn('mb-2', 'md:mb-0', 'md:flex', 'md:gap-1')}>
+              <span className={cn('block', 'md:hidden', 'font-bold')}>
                 Tempat dan Tanggal Lahir :
               </span>
-              <span className="hidden md:block">:</span>
+              <span className={cn('hidden', 'md:block')}>:</span>
               {siswa.tempat_tanggal_lahir}
             </p>
-            {/* <p className="mb-2 md:mb-0 md:flex md:gap-1">
-              <span className="block md:hidden font-bold">
+            {/* <p className={cn('mb-2', 'md:mb-0', 'md:flex', 'md:gap-1')}>
+              <span className={cn('block', 'md:hidden', 'font-bold')}>
                 Nama Orang Tua/Wali :
               </span>
-              <span className="hidden md:block">:</span>
+              <span className={cn('hidden', 'md:block')}>:</span>
               {siswa.nama_orangtua}
             </p> */}
-            <p className="mb-2 md:mb-0 md:flex md:gap-1">
-              <span className="block md:hidden font-bold">
+            <p className={cn('mb-2', 'md:mb-0', 'md:flex', 'md:gap-1')}>
+              <span className={cn('block', 'md:hidden', 'font-bold')}>
                 Nomor Induk Siswa :
               </span>
-              <span className="hidden md:block">:</span>
+              <span className={cn('hidden', 'md:block')}>:</span>
               {siswa.nis}
             </p>
-            <p className="mb-2 md:mb-0 md:flex md:gap-1">
-              <span className="block md:hidden font-bold">
+            <p className={cn('mb-2', 'md:mb-0', 'md:flex', 'md:gap-1')}>
+              <span className={cn('block', 'md:hidden', 'font-bold')}>
                 Nomor Induk Siswa Nasional :
               </span>
-              <span className="hidden md:block">:</span>
+              <span className={cn('hidden', 'md:block')}>:</span>
               {siswa.nisn}
             </p>
-            <p className="mb-2 md:mb-0 md:flex md:gap-1">
-              <span className="block md:hidden font-bold">
+            <p className={cn('mb-2', 'md:mb-0', 'md:flex', 'md:gap-1')}>
+              <span className={cn('block', 'md:hidden', 'font-bold')}>
                 Program Keahlian :
               </span>
-              <span className="hidden md:block">:</span>
+              <span className={cn('hidden', 'md:block')}>:</span>
               {siswa.program_keahlian}
             </p>
-            <p className="mb-2 md:mb-0 md:flex md:gap-1">
-              <span className="block md:hidden font-bold">
+            <p className={cn('mb-2', 'md:mb-0', 'md:flex', 'md:gap-1')}>
+              <span className={cn('block', 'md:hidden', 'font-bold')}>
                 Kompetensi Keahlian :
               </span>
-              <span className="hidden md:block">:</span>
+              <span className={cn('hidden', 'md:block')}>:</span>
               {siswa.kompetensi_keahlian}
             </p>
           </div>
         </div>
         {siswa.status === "Lulus" && (
-          <div className="mx-auto p-3 w-full md:text-base sm:text-sm text-xs bg-gray-100 border rounded-md shadow-md">
+          <div className={cn('mx-auto', 'p-3', 'w-full', 'md:text-base', 'sm:text-sm', 'text-xs', 'bg-gray-100', 'border', 'rounded-md', 'shadow-md')}>
             <h1 className="font-bold">Selamat</h1>
-            <p className="text-gray-800 md:text-sm">
+            <p className={cn('text-gray-800', 'md:text-sm')}>
               Anda dinyatakan <b>Lulus</b> dari satuan pendidikan SMKN 2 Kudus
             </p>
           </div>
         )}
         {siswa.status === "Lulus Bersyarat" && (
-          <div className="mx-auto p-3 w-full md:text-base sm:text-sm text-xs bg-red-50 border rounded-md">
+          <div className={cn('mx-auto', 'p-3', 'w-full', 'md:text-base', 'sm:text-sm', 'text-xs', 'bg-red-50', 'border', 'rounded-md')}>
             <h1 className="font-bold">Maaf</h1>
-            <p className="text-gray-800 md:text-sm">
+            <p className={cn('text-gray-800', 'md:text-sm')}>
               Anda dinyatakan <b>Lulus Bersyarat</b> dari satuan pendidikan SMKN
               2 Kudus
             </p>
@@ -397,7 +396,7 @@ export default function Siswa() {
         )}
         <button
           onClick={downloadPDF}
-          className="flex px-5 my-5 py-2 text-xs sm:text-sm md:text-base items-center justify-center gap-6 w-full rounded-md shadow-sm bg-indigo-500 hover:bg-indigo-600 transition duration-300 text-white"
+          className={cn('flex', 'px-5', 'my-5', 'py-2', 'text-xs', 'sm:text-sm', 'md:text-base', 'items-center', 'justify-center', 'gap-6', 'w-full', 'rounded-md', 'shadow-sm', 'bg-indigo-500', 'hover:bg-indigo-600', 'transition', 'duration-300', 'text-white')}
         >
           <Download />
           Download Bukti Kelulusan
