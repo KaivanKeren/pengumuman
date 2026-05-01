@@ -201,7 +201,6 @@ export default function Siswa() {
                   , Surat Elektronik smk2kudus@gmail.com
                 </p>
               </div>
-            </div>
             <div className="ml-4 mt-2">
                 <Image
                   src="/cropped-SMKN-2-Kudus.png"
@@ -214,6 +213,7 @@ export default function Siswa() {
                   priority
                 />
               </div>
+            </div>
 
             <Separator className="h-1 bg-black" orientation="horizontal" />
             <h2 className="text-lg font-bold text-center">
