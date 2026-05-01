@@ -201,7 +201,7 @@ export default function Siswa() {
                   , Surat Elektronik smk2kudus@gmail.com
                 </p>
               </div>
-              <div className={cn('flex-shrink-0', '-mr-4')}>
+              <div className={cn('flex-shrink-0', '-mr-4', '-mt-[0.2rem]')}>
                 <Image
                   src="/cropped-SMKN-2-Kudus.png"
                   width={0}
