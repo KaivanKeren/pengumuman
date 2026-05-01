@@ -163,7 +163,7 @@ export default function Siswa() {
         <div className={cn('max-w-lg', 'hidden', 'mx-auto', 'bg-white', 'border', 'rounded-md', 'p-8', 'my-8')}>
           <div id="siswa-info" className={cn('flex', 'flex-col', 'p-14', 'pb-1.5', '-mt-6')}>
             <div className={cn('flex', 'items-center', 'gap-4', 'mb-4')}>
-              <div className={cn('flex-shrink-0', 'ml-4', 'mt-2')}>
+              <div className={cn('flex-shrink-0', '-ml-4', 'mt-2')}>
                 <Image
                   src="/Logo Provinsi Jawa Tengah.png"
                   width={0}
@@ -186,9 +186,8 @@ export default function Siswa() {
                 <p className={cn('text-center', 'text-2xl', 'font-bold')}>
                   SMK NEGERI 2 KUDUS
                 </p>
-                <p className={cn('text-center', 'text-sm')}>
-                  Jalan : Desa Rejosari Dawe Kudus Kode Pos 59353 Telp. (0291)
-                  4101149
+                <p className={cn('text-center', 'text-xs')}>
+                  Jalan : Desa Rejosari Dawe Kudus Kode Pos 59353 Telp. (0291) 4101149
                 </p>
                 <p className={cn('text-center', 'text-sm')}>
                   Website &nbsp;
@@ -201,7 +200,7 @@ export default function Siswa() {
                   , Surat Elektronik smk2kudus@gmail.com
                 </p>
               </div>
-              <div className={cn('flex-shrink-0', '-mr-4', '-mt-[0.2rem]')}>
+              <div className={cn('flex-shrink-0', '-mr-5', '-mt-[0.2rem]')}>
                 <Image
                   src="/cropped-SMKN-2-Kudus.png"
                   width={0}
